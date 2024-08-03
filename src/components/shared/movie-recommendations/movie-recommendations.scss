@@ -1,0 +1,36 @@
+.movieRecommendations {
+  &__empty {
+    padding: 70px 0;
+    font-size: 16px;
+    color: $gray;
+  }
+
+  &__label {
+    padding: 10px;
+    padding-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 2px 0 0;
+    text-align: left;
+  }
+
+  &--scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 78vw;
+    scrollbar-width: thin;
+  }
+
+  &__poster {
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  &__poster-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 6%;
+  }
+}

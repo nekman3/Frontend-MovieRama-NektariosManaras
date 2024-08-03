@@ -1,0 +1,79 @@
+.movieCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  height: 110px;
+  border: 1px solid $cream-light;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.4s;
+
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &--active {
+    border: 1px solid $gray;
+  }
+
+  &__poster {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__poster-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 6%;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 2px 0 0;
+    text-align: left;
+  }
+
+  &__overview {
+    font-size: 14px;
+    color: $gray;
+    text-align: left;
+    // add text ellipsis when lines are more than three
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: $gray;
+    width: 100%;
+
+    &-left {
+      font-style: italic;
+    }
+
+    &-right {
+      font-weight: bold;
+    }
+  }
+}

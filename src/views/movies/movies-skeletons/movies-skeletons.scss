@@ -1,0 +1,74 @@
+.moviesSkeletons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movieCard__skeleton {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  height: 110px;
+  border: 1px solid $cream-light;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.4s;
+
+  &__poster {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    background-color: $cream-light;
+  }
+
+  &__poster-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 6%;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__title {
+    width: 200px;
+    height: 20px;
+    margin-top: 6px;
+    margin-right: 2px;
+    background-color: $cream-light;
+  }
+
+  &__overview {
+    height: 70px;
+    margin-top: 10px;
+    background-color: $cream-light;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: $gray;
+    width: 100%;
+
+    &-left {
+      font-style: italic;
+    }
+
+    &-right {
+      font-weight: bold;
+    }
+  }
+}

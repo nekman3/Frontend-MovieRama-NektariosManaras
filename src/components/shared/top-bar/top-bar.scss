@@ -1,0 +1,18 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 2px solid $cream-light;
+  padding: 10px;
+  height: 60px;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+
+  &__logo {
+    margin-bottom: 0;
+    color: $gray;
+  }
+}
