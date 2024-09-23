@@ -1,8 +1,6 @@
 # MovieRama
 
-Assignment for the Frontend engineer position
-
-Assignee: Nektarios Manaras
+Just a movie project
 
 #### Programming Language / Framework / Tools
 
